@@ -26,6 +26,7 @@ spring.mail.username={{YOUR-EMAIL}}
 spring.mail.password={{YOUR-PASSWORD}}
 ```
 
+### Config RabbitMQ
 Create a RabbitMQ project in [CloudAMQP](cloudamqp.com) or use other message tool instance
 
 ``` properties
