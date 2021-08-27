@@ -17,7 +17,7 @@ Start postgres using [Docker](/docker-compose.yml)
 ``` shell
 docker-compose up -d
 ```
-### Config SMTP (Email)
+### Setup SMTP (Email)
 
 Edit [application.properties](src/main/resources/application.properties) file
 
@@ -26,7 +26,7 @@ spring.mail.username={{YOUR-EMAIL}}
 spring.mail.password={{YOUR-PASSWORD}}
 ```
 
-### Config RabbitMQ
+### Setup RabbitMQ
 Create a RabbitMQ project in [CloudAMQP](cloudamqp.com) or use other message tool instance
 
 ``` properties
