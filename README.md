@@ -8,6 +8,7 @@ Sender email application using microservice architecture.
 - Spring Framework
 - Postgres
 - Docker
+- RabbitMQ
 
 ## Get Started
 
@@ -18,11 +19,18 @@ docker-compose up -d
 ```
 ### Config SMTP (Email)
 
-Edit [application.properties](src/main/resources/application.properties) file:
+Edit [application.properties](src/main/resources/application.properties) file
 
 ``` properties
 spring.mail.username={{YOUR-EMAIL}}
 spring.mail.password={{YOUR-PASSWORD}}
+```
+
+Create a RabbitMQ project in [CloudAMQP](cloudamqp.com) or use other message tool instance
+
+``` properties
+spring.rabbitmq.addresses={{YOUR-URL}}
+spring.rabbitmq.queue=ms.email
 ```
 
 ## References
